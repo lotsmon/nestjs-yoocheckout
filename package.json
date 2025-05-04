@@ -2,6 +2,11 @@
   "name": "nestjs-yoocheckout",
   "version": "1.0.0",
   "description": "A NestJS library for integrating with YooKassa API. Based on @a2seven/yoo-checkout",
+  "main": "./dest/public-api.js",
+  "types": "./dest/public-api.d.ts",
+  "files": [
+    "dest"
+  ],
   "keywords": [
     "nest",
     "nestjs",
@@ -9,10 +14,19 @@
     "yookassa",
     "payment"
   ],
-  "author": "ltsmn",
-  "license": "UNLICENSED",
-  "main": "./dest/index",
-  "types": "./dest/index.d.ts",
+  "homepage": "https://github.com/lotsmon/nestjs-yoocheckout/blob/main/README.md",
+  "repository": "git@github.com:lotsmon/nestjs-yoocheckout.git",
+  "author": {
+		"name": "lotsmon",
+		"url": "https://github.com/lotsmon"
+	},
+  "contributors": [
+		{
+			"name": "ltsmn",
+			"email": "mrlotsmonerol@gmail.com"
+		}
+	],
+  "license": "MIT",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "prepublish:npm": "npm run build",
